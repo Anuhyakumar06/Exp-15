@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Homepage</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #023e8a;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://picsum.photos/1200/400') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+      font-size: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    footer {
+      background: #03045e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BlueWave Solutions 🌊</h1>
+    <p>Innovative IT & Web Services</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="hero">Welcome to Our Company 🚀</div>
+  <section class="services">
+    <div class="card"><h3>🌐 Web Development</h3><p>Responsive, modern websites built for speed.</p></div>
+    <div class="card"><h3>📱 Mobile Apps</h3><p>Custom iOS & Android solutions for your business.</p></div>
+    <div class="card"><h3>☁️ Cloud Solutions</h3><p>Secure and scalable cloud hosting services.</p></div>
+  </section>
+  <footer>© 2025 BlueWave Solutions | All Rights Reserved</footer>
+</body>
+</html>
